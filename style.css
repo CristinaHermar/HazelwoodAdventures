@@ -26,6 +26,17 @@
 *{ box-sizing: border-box; }
 html,body{ margin:0; padding:0; }
 
+.ribbon{
+  height: 9px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--gold) 0 3px,
+    var(--sage) 3px 6px,
+    var(--dusk-blue) 6px 9px
+  );
+}
+
 body{
   background: var(--cream);
   color: var(--ink);
@@ -76,12 +87,12 @@ h1,h2{
   font-style: italic;
   font-weight: 600;
 }
-.hero__rule{
-  width: 44px;
-  height: 2px;
-  background: var(--gold);
-  border: none;
+.hero__divider{
+  width: 140px;
+  height: auto;
+  color: var(--gold);
   margin: 1.1rem auto;
+  display: block;
 }
 .hero__sub{
   margin: 0;
