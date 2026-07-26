@@ -246,7 +246,6 @@ main{ max-width: 620px; margin: 0 auto; padding: 0 1.1rem; }
   color: #8a7748;
 }
 .tag--price{ background: #E7EDE6; color: var(--sage-deep); }
-.tag--combine{ background: #E6EAF0; color: var(--dusk-blue-deep); }
 
 .card__actions{ grid-column: 1/-1; display:flex; gap: 0.5rem; margin-top: 0.65rem; }
 .day-btn{
@@ -293,6 +292,11 @@ main{ max-width: 620px; margin: 0 auto; padding: 0 1.1rem; }
 .plan-bar__tab{
   flex: 1;
   display:flex;
+  gap: 0.4rem;
+}
+.plan-bar__main{
+  flex: 1;
+  display:flex;
   align-items:center;
   justify-content:center;
   gap: 0.5rem;
@@ -305,7 +309,7 @@ main{ max-width: 620px; margin: 0 auto; padding: 0 1.1rem; }
   font-size: 0.9rem;
   cursor: pointer;
 }
-.plan-bar__tab[data-day="sun"]{ background: var(--dusk-blue); }
+.plan-bar__tab[data-day="sun"] .plan-bar__main{ background: var(--dusk-blue); }
 .plan-bar__count{
   min-width: 1.4em;
   height: 1.4em;
@@ -316,6 +320,23 @@ main{ max-width: 620px; margin: 0 auto; padding: 0 1.1rem; }
   background: rgba(255,255,255,0.3);
   font-size: 0.78rem;
 }
+.plan-bar__send{
+  flex: none;
+  width: 42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 10px;
+  background: var(--whatsapp);
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.plan-bar__send.is-empty{
+  opacity: 0.35;
+  pointer-events: none;
+}
+.plan-bar__send:focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
 
 /* ---------- Drawer ---------- */
 .drawer{
@@ -367,6 +388,36 @@ main{ max-width: 620px; margin: 0 auto; padding: 0 1.1rem; }
   font-weight: 600;
 }
 .drawer__empty{ font-size: 0.85rem; color: var(--ink-soft); text-align:center; padding: 1.2rem 0; }
+
+.drawer__when{
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+.drawer__when label{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.drawer__when input{
+  border: 1.5px solid var(--stone);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  color: var(--ink);
+  background: #fff;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+.drawer__when input:focus-visible{ outline: 2px solid var(--gold); outline-offset: 1px; }
 
 .wa-send{
   display:flex;

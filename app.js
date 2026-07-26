@@ -32,9 +32,17 @@
   function loadPlan() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : { sat: [], sun: [] };
+      const parsed = raw ? JSON.parse(raw) : null;
+      return {
+        sat: parsed?.sat || [],
+        sun: parsed?.sun || [],
+        when: {
+          sat: { date: parsed?.when?.sat?.date || "", time: parsed?.when?.sat?.time || "" },
+          sun: { date: parsed?.when?.sun?.date || "", time: parsed?.when?.sun?.time || "" }
+        }
+      };
     } catch (e) {
-      return { sat: [], sun: [] };
+      return { sat: [], sun: [], when: { sat: { date: "", time: "" }, sun: { date: "", time: "" } } };
     }
   }
 
@@ -154,7 +162,6 @@
       <div class="card__tags">
         <span class="tag tag--price">${escapeHtml(place.price)}</span>
         <span class="tag">${escapeHtml(place.type)}</span>
-        <span class="tag tag--combine">+ ${escapeHtml(place.combine)}</span>
       </div>
       <div class="card__actions">
         <button class="day-btn" data-day="sat" aria-pressed="${inSat}">Sat</button>
@@ -171,7 +178,7 @@
   }
 
   function singlePlaceMessage(place) {
-    return `Hi Cristina! I'd like to do this plan with you: ${place.place} (${place.location}) — about ${place.bike} min biking from Hazelwood House. Are you in?`;
+    return `Hey Cristina! I'd like to do this plan with you: ${place.place} (${place.location}). Are you in?`;
   }
 
   function toggleDay(id, day, btn) {
@@ -204,6 +211,8 @@
   const countSun = document.getElementById("countSun");
   const tabSat = document.getElementById("tabSat");
   const tabSun = document.getElementById("tabSun");
+  const sendSat = document.getElementById("sendSat");
+  const sendSun = document.getElementById("sendSun");
   const drawer = document.getElementById("drawer");
   const drawerHandle = document.getElementById("drawerHandle");
   const drawerTitle = document.getElementById("drawerTitle");
@@ -215,10 +224,34 @@
 
   const drawerWhatsApp = document.getElementById("drawerWhatsApp");
   const drawerWhatsAppLabel = document.getElementById("drawerWhatsAppLabel");
+  const drawerDate = document.getElementById("drawerDate");
+  const drawerTime = document.getElementById("drawerTime");
+
+  drawerDate.addEventListener("input", () => {
+    if (!drawerOpenDay) return;
+    state.plan.when[drawerOpenDay].date = drawerDate.value;
+    savePlan();
+    renderPlanBar();
+  });
+
+  drawerTime.addEventListener("input", () => {
+    if (!drawerOpenDay) return;
+    state.plan.when[drawerOpenDay].time = drawerTime.value;
+    savePlan();
+    renderPlanBar();
+  });
 
   function renderPlanBar() {
-    countSat.textContent = state.plan.sat.length;
-    countSun.textContent = state.plan.sun.length;
+    const satItems = dayPlaces("sat");
+    const sunItems = dayPlaces("sun");
+
+    countSat.textContent = satItems.length;
+    countSun.textContent = sunItems.length;
+
+    sendSat.classList.toggle("is-empty", satItems.length === 0);
+    sendSun.classList.toggle("is-empty", sunItems.length === 0);
+    sendSat.href = satItems.length ? whatsappLink(dayMessage("sat", satItems)) : "#";
+    sendSun.href = sunItems.length ? whatsappLink(dayMessage("sun", sunItems)) : "#";
   }
 
   function openDrawer(day) {
@@ -242,18 +275,29 @@
       .filter(Boolean);
   }
 
+  function formatDate(dateStr) {
+    if (!dateStr) return "";
+    const d = new Date(dateStr + "T00:00:00");
+    if (isNaN(d)) return "";
+    return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
+  }
+
   function dayMessage(day, items) {
     const dayName = day === "sat" ? "Saturday" : "Sunday";
     if (!items.length) return "";
-    const totalBike = items.reduce((sum, p) => sum + p.bike, 0);
     const list = items.map((p) => `• ${p.place} (${p.location})`).join("\n");
-    return `Hi Cristina! I'd like to do this plan with you on ${dayName}:\n${list}\n\nAbout ${totalBike} min total biking between stops. Are you in?`;
+    const when = state.plan.when[day];
+    const dateLabel = formatDate(when.date) || dayName;
+    const timePart = when.time ? ` at ${when.time}` : "";
+    return `Hey Cristina! I'd like to do this plan with you:\n${list}\n\nI could do it on ${dateLabel}${timePart}. Are you in?`;
   }
 
   function renderDrawer() {
     if (!drawerOpenDay) return;
     const day = drawerOpenDay;
     drawerTitle.textContent = day === "sat" ? "Saturday" : "Sunday";
+    drawerDate.value = state.plan.when[day].date;
+    drawerTime.value = state.plan.when[day].time;
 
     const items = dayPlaces(day);
 
