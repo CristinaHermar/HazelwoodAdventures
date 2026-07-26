@@ -87,12 +87,12 @@ h1,h2{
   font-style: italic;
   font-weight: 600;
 }
-.hero__divider{
-  width: 140px;
-  height: auto;
-  color: var(--gold);
+.hero__rule{
+  width: 44px;
+  height: 2px;
+  background: var(--gold);
+  border: none;
   margin: 1.1rem auto;
-  display: block;
 }
 .hero__sub{
   margin: 0;
