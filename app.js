@@ -213,6 +213,14 @@
   const tabSun = document.getElementById("tabSun");
   const sendSat = document.getElementById("sendSat");
   const sendSun = document.getElementById("sendSun");
+  const reminder = document.getElementById("reminder");
+  const reminderClose = document.getElementById("reminderClose");
+  let reminderDismissed = false;
+
+  reminderClose.addEventListener("click", () => {
+    reminderDismissed = true;
+    reminder.classList.remove("show");
+  });
   const drawer = document.getElementById("drawer");
   const drawerHandle = document.getElementById("drawerHandle");
   const drawerTitle = document.getElementById("drawerTitle");
@@ -241,9 +249,12 @@
     renderPlanBar();
   });
 
+  let lastTotal = 0;
+
   function renderPlanBar() {
     const satItems = dayPlaces("sat");
     const sunItems = dayPlaces("sun");
+    const total = satItems.length + sunItems.length;
 
     countSat.textContent = satItems.length;
     countSun.textContent = sunItems.length;
@@ -252,6 +263,10 @@
     sendSun.classList.toggle("is-empty", sunItems.length === 0);
     sendSat.href = satItems.length ? whatsappLink(dayMessage("sat", satItems)) : "#";
     sendSun.href = sunItems.length ? whatsappLink(dayMessage("sun", sunItems)) : "#";
+
+    if (total > lastTotal) reminderDismissed = false;
+    lastTotal = total;
+    reminder.classList.toggle("show", total > 0 && !reminderDismissed);
   }
 
   function openDrawer(day) {

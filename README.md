@@ -36,12 +36,13 @@ solo escriba su sugerencia y le dé enviar.
 ## Publicarla en GitHub Pages
 
 1. Crea un repositorio nuevo en GitHub (puede ser público o privado, pero Pages gratis requiere público a menos que tengas GitHub Pro/Team).
-2. Sube estos 4 archivos a la raíz del repo: `index.html`, `style.css`, `app.js`, `data.js`.
-   - Vía web: "Add file" → "Upload files", arrastra los 4 archivos, y haz commit.
+2. Sube estos archivos a la raíz del repo: `index.html`, `style.css`, `app.js`, `data.js`,
+   `manifest.json`, `icon-180.png`, `icon-192.png`, `icon-512.png`.
+   - Vía web: "Add file" → "Upload files", arrastra los archivos, y haz commit.
    - Vía terminal:
      ```bash
      git init
-     git add index.html style.css app.js data.js README.md
+     git add index.html style.css app.js data.js manifest.json icon-180.png icon-192.png icon-512.png README.md
      git commit -m "Glasgow day planner"
      git branch -M main
      git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
@@ -59,9 +60,11 @@ solo escriba su sugerencia y le dé enviar.
 | Archivo      | Qué hace |
 |--------------|----------|
 | `index.html` | Estructura de la página |
-| `style.css`  | Estilos (paleta heather/sandstone/teal, mobile-first) |
+| `style.css`  | Estilos (paleta cream/sage/dusk-blue/gold, mobile-first) |
 | `data.js`    | Los 74 lugares con zona, tipo, precio, descripción y minutos en bici |
-| `app.js`     | Filtros, orden, selección por día y guardado local |
+| `app.js`     | Filtros, orden, selección por día, WhatsApp y guardado local |
+| `manifest.json` | Le dice al celular qué ícono e info usar al "Añadir a inicio" |
+| `icon-180.png` / `icon-192.png` / `icon-512.png` | El ícono (castillo + gaita) para la pantalla de inicio |
 
 ## Actualizar los datos
 
