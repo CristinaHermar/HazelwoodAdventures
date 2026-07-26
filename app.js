@@ -14,6 +14,11 @@
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   }
 
+  function searchLink(place) {
+    const query = encodeURIComponent(`${place.place}, ${place.address || place.location + ", Glasgow"}`);
+    return `https://www.google.com/search?q=${query}`;
+  }
+
   const cardList = document.getElementById("cardList");
   const resultCount = document.getElementById("resultCount");
   const searchInput = document.getElementById("search");
@@ -155,6 +160,7 @@
         <div>
           <p class="card__name">${escapeHtml(place.place)}</p>
           <p class="card__meta">${escapeHtml(place.location)} · ${escapeHtml(place.time)}</p>
+          <a class="card__maps-link" href="${searchLink(place)}" target="_blank" rel="noopener">Discover more about this place →</a>
         </div>
         <span class="card__bike">${bikeIcon} ~${place.bike} min</span>
       </div>

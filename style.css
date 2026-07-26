@@ -225,6 +225,17 @@ main{ max-width: 620px; margin: 0 auto; padding: 0 1.1rem; }
 .card__name{ font-family: "Cormorant Garamond","Georgia",serif; font-size: 1.28rem; font-weight: 600; margin: 0; }
 .card__meta{ font-size: 0.78rem; color: var(--ink-soft); margin: 0.2rem 0 0; }
 
+.card__maps-link{
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+.card__maps-link:hover{ text-decoration: underline; }
+.card__maps-link:focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
+
 .card__bike{
   flex: none;
   display:flex;

@@ -7,7 +7,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Food hall with regular live performances, especially on weekends.",
     "combine": "Central Station + Buchanan Street",
-    "bike": 19
+    "bike": 19,
+    "address": "253 Argyle St, Glasgow G2 8DL, UK"
   },
   {
     "place": "Mitchell Library",
@@ -17,7 +18,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "One of Europe’s largest public libraries",
     "combine": "Garnethill",
-    "bike": 18
+    "bike": 18,
+    "address": "North St, Glasgow G3 7DN, UK"
   },
   {
     "place": "Gallery of Modern Art (GoMA)",
@@ -27,7 +29,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Contemporary art in a historic building",
     "combine": "George Square + Buchanan St",
-    "bike": 21
+    "bike": 21,
+    "address": "111 Queen St, Royal Exchange Square, Glasgow G1 3AH, UK"
   },
   {
     "place": "George Square",
@@ -37,7 +40,8 @@ const PLACES = [
     "time": "20–30 min",
     "desc": "Main city square",
     "combine": "GoMA",
-    "bike": 22
+    "bike": 22,
+    "address": "Glasgow G2 1DH, UK"
   },
   {
     "place": "Buchanan Street",
@@ -47,7 +51,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Famous pedestrian street",
     "combine": "George Square",
-    "bike": 21
+    "bike": 21,
+    "address": "Buchanan St, Glasgow, UK"
   },
   {
     "place": "Merchant City",
@@ -57,7 +62,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Historic merchant area",
     "combine": "Barras + GoMA",
-    "bike": 22
+    "bike": 22,
+    "address": "Merchant City, Glasgow, UK"
   },
   {
     "place": "Glasgow Mural Trail",
@@ -67,7 +73,8 @@ const PLACES = [
     "time": "1.5–2 hrs",
     "desc": "Giant urban murals route",
     "combine": "GoMA + Merchant City",
-    "bike": 24
+    "bike": 24,
+    "address": "Merchant City, Glasgow G1 1LE, UK"
   },
   {
     "place": "The Lighthouse",
@@ -77,7 +84,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Mackintosh building with views",
     "combine": "Buchanan Street",
-    "bike": 20
+    "bike": 20,
+    "address": "11 Mitchell Ln, Glasgow G1 3NU, UK"
   },
   {
     "place": "Mackintosh at the Willow",
@@ -87,7 +95,8 @@ const PLACES = [
     "time": "20 min",
     "desc": "Mackintosh design landmark",
     "combine": "Lighthouse",
-    "bike": 20
+    "bike": 20,
+    "address": "217 Sauchiehall St, Glasgow G2 3EX, UK"
   },
   {
     "place": "Glasgow Central Station Tour",
@@ -97,7 +106,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Historic station and tunnels tour",
     "combine": "George Square",
-    "bike": 20
+    "bike": 20,
+    "address": "1-99 Gordon St, Glasgow G1 3PE, UK"
   },
   {
     "place": "Garnethill",
@@ -107,7 +117,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Georgian architecture",
     "combine": "Mitchell Library",
-    "bike": 20
+    "bike": 20,
+    "address": "Garnethill, Glasgow, UK"
   },
   {
     "place": "King Tut's Wah Wah Hut",
@@ -117,7 +128,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Famous for launching bands like Oasis; intimate atmosphere.",
     "combine": "Buchanan Street + GoMA",
-    "bike": 19
+    "bike": 19,
+    "address": "272A St Vincent St, Glasgow G2 5RL, UK"
   },
   {
     "place": "Nice N Sleazy",
@@ -127,7 +139,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Alternative bar with live music almost every night.",
     "combine": "CCA + Sauchiehall Street",
-    "bike": 19
+    "bike": 19,
+    "address": "421 Sauchiehall St, Glasgow G2 3LG, UK"
   },
   {
     "place": "The Scotia Bar",
@@ -137,7 +150,8 @@ const PLACES = [
     "time": "1–3 hrs",
     "desc": "One of Glasgow’s oldest pubs, known for authentic live folk music sessions.",
     "combine": "River Clyde + Merchant City",
-    "bike": 21
+    "bike": 21,
+    "address": "112-114 Stockwell St, Glasgow G1 4LW, UK"
   },
   {
     "place": "Sloans",
@@ -147,7 +161,8 @@ const PLACES = [
     "time": "2–4 hrs",
     "desc": "Glasgow’s oldest pub, famous for traditional Scottish ceilidh nights.",
     "combine": "George Square + Merchant City",
-    "bike": 20
+    "bike": 20,
+    "address": "108 Argyle St, Glasgow G2 8BG, UK"
   },
   {
     "place": "Glasgow Royal Concert Hall",
@@ -157,7 +172,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Home of the Royal Scottish National Orchestra and major international performances.",
     "combine": "Buchanan Street + George Square",
-    "bike": 22
+    "bike": 22,
+    "address": "2 Sauchiehall St, Glasgow G2 3NY, UK"
   },
   {
     "place": "Waverley Paddle Steamer",
@@ -167,7 +183,8 @@ const PLACES = [
     "time": "2–4 hrs",
     "desc": "Historic paddle steamer",
     "combine": "Harbour",
-    "bike": 10
+    "bike": 10,
+    "address": "36 Lancefield Quay, Glasgow G3 8HA, UK"
   },
   {
     "place": "SEC Armadillo",
@@ -177,7 +194,8 @@ const PLACES = [
     "time": "2–4 hrs",
     "desc": "Hosts concerts, comedy shows and touring productions.",
     "combine": "OVO Hydro + Riverside Museum",
-    "bike": 12
+    "bike": 12,
+    "address": "SEC Armadillo, Exhibition Way, Glasgow G3 8YW, UK"
   },
   {
     "place": "Glasgow Cathedral",
@@ -187,7 +205,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Medieval cathedral from the 12th century",
     "combine": "Necropolis + St Mungo",
-    "bike": 27
+    "bike": 27,
+    "address": "Castle St, Glasgow G4 0QZ, UK"
   },
   {
     "place": "Glasgow Necropolis",
@@ -197,7 +216,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Victorian cemetery with city views",
     "combine": "Cathedral",
-    "bike": 28
+    "bike": 28,
+    "address": "Castle St, Glasgow G4 0UZ, UK"
   },
   {
     "place": "St Mungo Museum",
@@ -207,7 +227,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Religions and cultures museum",
     "combine": "Cathedral",
-    "bike": 27
+    "bike": 27,
+    "address": "2 Castle St, Glasgow G4 0RH, UK"
   },
   {
     "place": "Provand’s Lordship",
@@ -217,7 +238,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Oldest surviving medieval house in Glasgow",
     "combine": "Cathedral",
-    "bike": 27
+    "bike": 27,
+    "address": "3 Castle St, Glasgow G4 0RH, UK"
   },
   {
     "place": "Glasgow Green",
@@ -227,7 +249,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Oldest public park in Glasgow",
     "combine": "People’s Palace",
-    "bike": 25
+    "bike": 25,
+    "address": "Greendyke St, Saltmarket, Glasgow G1 5DB, UK"
   },
   {
     "place": "Dennistoun",
@@ -237,7 +260,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Cafés and traditional architecture",
     "combine": "Cathedral",
-    "bike": 35
+    "bike": 35,
+    "address": "Dennistoun, Glasgow, UK"
   },
   {
     "place": "The Barras Market",
@@ -247,7 +271,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Historic market and local vibe",
     "combine": "Glasgow Green",
-    "bike": 25
+    "bike": 25,
+    "address": "244 Gallowgate, Glasgow G4 0TT, UK"
   },
   {
     "place": "Barrowland Ballroom",
@@ -257,7 +282,8 @@ const PLACES = [
     "time": "2–4 hrs",
     "desc": "Legendary concert venue; many artists consider it one of the best in the world.",
     "combine": "Barras Market + Glasgow Green",
-    "bike": 25
+    "bike": 25,
+    "address": "244 Gallowgate, Glasgow G4 0TT, UK"
   },
   {
     "place": "Glasgow Cathedral Organ Recitals",
@@ -267,7 +293,8 @@ const PLACES = [
     "time": "30–60 min",
     "desc": "Occasional organ recitals in the stunning medieval cathedral.",
     "combine": "Cathedral + Necropolis",
-    "bike": 27
+    "bike": 27,
+    "address": "Castle St, Glasgow G4 0QZ, UK"
   },
   {
     "place": "Saint Luke’s",
@@ -277,7 +304,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Former church converted into a unique concert venue.",
     "combine": "Barras Market + Glasgow Green",
-    "bike": 26
+    "bike": 26,
+    "address": "17 Bain St, Glasgow G40 2JZ, UK"
   },
   {
     "place": "Seven Lochs Wetland Park",
@@ -287,7 +315,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Lakes, wetlands and trails",
     "combine": "Hogganfield Loch",
-    "bike": 48
+    "bike": 48,
+    "address": "1240 Cumbernauld Rd, Glasgow G33 1AH, UK"
   },
   {
     "place": "Hogganfield Loch",
@@ -297,7 +326,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Bird watching lake",
     "combine": "Seven Lochs",
-    "bike": 51
+    "bike": 51,
+    "address": "Hogganfield, Glasgow G33 3UJ, UK"
   },
   {
     "place": "Hidden Lane",
@@ -307,7 +337,8 @@ const PLACES = [
     "time": "20–30 min",
     "desc": "Independent shops and studios",
     "combine": "Finnieston",
-    "bike": 15
+    "bike": 15,
+    "address": "The Hidden Ln, Finnieston, Glasgow G3 8ND, UK"
   },
   {
     "place": "Finnieston Crane",
@@ -317,7 +348,8 @@ const PLACES = [
     "time": "20–30 min",
     "desc": "Industrial Glasgow landmark",
     "combine": "Riverside",
-    "bike": 12
+    "bike": 12,
+    "address": "Finnieston Quay, Glasgow G3 8HN, UK"
   },
   {
     "place": "The Ben Nevis",
@@ -327,7 +359,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Excellent pub for authentic Scottish folk music in a cozy setting.",
     "combine": "Kelvingrove + Finnieston",
-    "bike": 15
+    "bike": 15,
+    "address": "1147 Argyle St, Finnieston, Glasgow G3 8TB, UK"
   },
   {
     "place": "The Tenement House",
@@ -337,7 +370,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Victorian home preserved in time",
     "combine": "Garnethill",
-    "bike": 20
+    "bike": 20,
+    "address": "145 Buccleuch St, Glasgow G3 6QN, UK"
   },
   {
     "place": "People’s Palace & Winter Gardens",
@@ -347,7 +381,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Social history + Victorian greenhouse",
     "combine": "Glasgow Green",
-    "bike": 25
+    "bike": 25,
+    "address": "The Green, Glasgow G40 1AT, UK"
   },
   {
     "place": "Riverside Museum",
@@ -357,7 +392,8 @@ const PLACES = [
     "time": "1.5–2 hrs",
     "desc": "Transport museum with cars, ships and recreated streets",
     "combine": "Tall Ship + Science Centre",
-    "bike": 12
+    "bike": 12,
+    "address": "100 Pointhouse Rd, Glasgow G3 8RS, UK"
   },
   {
     "place": "Tall Ship Glenlee",
@@ -367,7 +403,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Historic sailing ship on the Clyde",
     "combine": "Riverside Museum",
-    "bike": 12
+    "bike": 12,
+    "address": "150 Pointhouse Pl, Glasgow G3 8RS, UK"
   },
   {
     "place": "Squinty Bridge",
@@ -377,7 +414,8 @@ const PLACES = [
     "time": "15–30 min",
     "desc": "Clyde views",
     "combine": "Riverside",
-    "bike": 12
+    "bike": 12,
+    "address": "The Clyde Arc, Glasgow, UK"
   },
   {
     "place": "Clydeside Distillery",
@@ -387,7 +425,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Scottish whisky experience",
     "combine": "Riverside",
-    "bike": 12
+    "bike": 12,
+    "address": "100 Stobcross Rd, Glasgow G3 8QQ, UK"
   },
   {
     "place": "Govan Stones",
@@ -397,7 +436,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Medieval carved stones",
     "combine": "Riverside",
-    "bike": 12
+    "bike": 12,
+    "address": "866 Govan Rd, Glasgow G51 3DL, UK"
   },
   {
     "place": "Britannia Panopticon",
@@ -407,7 +447,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Oldest surviving music hall",
     "combine": "Merchant City",
-    "bike": 22
+    "bike": 22,
+    "address": "113-117 Trongate, Glasgow G1 5HD, UK"
   },
   {
     "place": "Sharmanka Kinetic Theatre",
@@ -417,7 +458,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Moving mechanical sculptures",
     "combine": "Merchant City",
-    "bike": 22
+    "bike": 22,
+    "address": "Trongate 103, Trongate, Glasgow G1 5HD, UK"
   },
   {
     "place": "City Halls",
@@ -427,7 +469,8 @@ const PLACES = [
     "time": "2 hrs",
     "desc": "Historic concert hall with outstanding acoustics.",
     "combine": "Merchant City",
-    "bike": 23
+    "bike": 23,
+    "address": "100 Candleriggs, Glasgow G1 1NQ, UK"
   },
   {
     "place": "Dawsholm Park",
@@ -437,7 +480,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Park beside River Kelvin",
     "combine": "Botanic Gardens",
-    "bike": 31
+    "bike": 31,
+    "address": "Glasgow G61 1RT, UK"
   },
   {
     "place": "Glasgow Science Centre",
@@ -447,7 +491,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Interactive science museum",
     "combine": "Riverside",
-    "bike": 10
+    "bike": 10,
+    "address": "50 Pacific Quay, Glasgow G51 1EA, UK"
   },
   {
     "place": "Glasgow Tower",
@@ -457,7 +502,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "City views from tower",
     "combine": "Science Centre",
-    "bike": 10
+    "bike": 10,
+    "address": "50 Pacific Quay, Glasgow G51 1DA, UK"
   },
   {
     "place": "Burrell Collection",
@@ -467,7 +513,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "European, Asian and medieval art collection",
     "combine": "Pollok Country Park",
-    "bike": 8
+    "bike": 8,
+    "address": "Pollok Country Park, 2060 Pollokshaws Rd, Bellahouston, Glasgow G43 1AT, UK"
   },
   {
     "place": "Pollok House",
@@ -477,7 +524,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Historic mansion in the park",
     "combine": "Burrell",
-    "bike": 10
+    "bike": 10,
+    "address": "2060 Pollokshaws Rd, Pollokshaws, Glasgow G43 1AT, UK"
   },
   {
     "place": "Tramway",
@@ -487,7 +535,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Alternative cultural centre",
     "combine": "Queen’s Park",
-    "bike": 15
+    "bike": 15,
+    "address": "25 Albert Dr, Glasgow G41 2PE, UK"
   },
   {
     "place": "Tramway Hidden Garden",
@@ -497,7 +546,8 @@ const PLACES = [
     "time": "20–40 min",
     "desc": "Hidden urban garden",
     "combine": "Tramway",
-    "bike": 15
+    "bike": 15,
+    "address": "25A Albert Dr, Glasgow G41 2PE, UK"
   },
   {
     "place": "Centre for Contemporary Arts",
@@ -507,7 +557,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Contemporary art and events",
     "combine": "Garnethill",
-    "bike": 20
+    "bike": 20,
+    "address": "350 Sauchiehall St, Glasgow G2 3JD, UK"
   },
   {
     "place": "Pollok Country Park",
@@ -517,7 +568,8 @@ const PLACES = [
     "time": "2–4 hrs",
     "desc": "Forests, trails and Highland cows",
     "combine": "Burrell Collection",
-    "bike": 8
+    "bike": 8,
+    "address": "2060 Pollokshaws Rd, Bellahouston, Glasgow G43 1AT, UK"
   },
   {
     "place": "Bellahouston Park",
@@ -527,7 +579,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Large park with views",
     "combine": "House for Art Lover",
-    "bike": 2
+    "bike": 2,
+    "address": "16 Dumbreck Rd, Bellahouston, Glasgow G41 5BW, UK"
   },
   {
     "place": "Linn Park",
@@ -537,7 +590,8 @@ const PLACES = [
     "time": "1.5–3 hrs",
     "desc": "Waterfalls and trails",
     "combine": "Queen’s Park",
-    "bike": 29
+    "bike": 29,
+    "address": "Glasgow G44 5TA, UK"
   },
   {
     "place": "Cathkin Braes",
@@ -547,7 +601,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Best panoramic views of Glasgow",
     "combine": "Queen’s Park",
-    "bike": 41
+    "bike": 41,
+    "address": "39A Cathkin Rd, Glasgow G42 9UJ, UK"
   },
   {
     "place": "Queen’s Park",
@@ -557,7 +612,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Great city views",
     "combine": "Shawlands",
-    "bike": 15
+    "bike": 15,
+    "address": "Langside Rd, Glasgow G42 9QL, UK"
   },
   {
     "place": "Scotland Street School Museum",
@@ -567,7 +623,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Victorian school designed by Mackintosh",
     "combine": "Pollok",
-    "bike": 13
+    "bike": 13,
+    "address": "225 Scotland St, Kinning Park, Glasgow G5 8QB, UK"
   },
   {
     "place": "Shawlands",
@@ -577,7 +634,8 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Cafés and local atmosphere",
     "combine": "Queen’s Park",
-    "bike": 14
+    "bike": 14,
+    "address": "Shawlands, Glasgow, UK"
   },
   {
     "place": "Strathbungo",
@@ -587,7 +645,8 @@ const PLACES = [
     "time": "30–60 min",
     "desc": "Beautiful Victorian streets",
     "combine": "Shawlands",
-    "bike": 14
+    "bike": 14,
+    "address": "Strathbungo, Glasgow G41 2AF, UK"
   },
   {
     "place": "Glad Cafe",
@@ -597,7 +656,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Small venue showcasing local and emerging artists.",
     "combine": "Queen’s Park",
-    "bike": 13
+    "bike": 13,
+    "address": "1006A Pollokshaws Rd, Glasgow G41 2HG, UK"
   },
   {
     "place": "Hunterian Museum",
@@ -607,7 +667,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Science, medicine, fossils and curiosities",
     "combine": "University + Art Gallery",
-    "bike": 18
+    "bike": 18,
+    "address": "University Ave, Glasgow G12 8QQ, UK"
   },
   {
     "place": "Hunterian Art Gallery",
@@ -617,7 +678,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Rembrandt, Whistler and European art",
     "combine": "University + Cloisters",
-    "bike": 18
+    "bike": 18,
+    "address": "82 Hillhead St, Glasgow G12 8QQ, UK"
   },
   {
     "place": "Fossil Grove",
@@ -627,7 +689,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Ancient fossil trees",
     "combine": "Victoria Park",
-    "bike": 21
+    "bike": 21,
+    "address": "Victoria Park Dr S, Glasgow G14 9QR, UK"
   },
   {
     "place": "Kelvingrove Art Gallery and Museum",
@@ -637,7 +700,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Glasgow’s main museum: art, natural history and beautiful architecture",
     "combine": "Kelvingrove Park + University",
-    "bike": 16
+    "bike": 16,
+    "address": "Argyle St, Glasgow G3 8AG, UK"
   },
   {
     "place": "University of Glasgow",
@@ -647,7 +711,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Gothic campus, Hogwarts feeling",
     "combine": "Cloisters + Hunterian",
-    "bike": 17
+    "bike": 17,
+    "address": "Glasgow G12 8QQ, UK"
   },
   {
     "place": "The Cloisters",
@@ -657,7 +722,8 @@ const PLACES = [
     "time": "20–30 min",
     "desc": "Iconic gothic passage",
     "combine": "University",
-    "bike": 17
+    "bike": 17,
+    "address": "Glasgow G12 8QQ, UK"
   },
   {
     "place": "Glasgow Botanic Gardens",
@@ -667,7 +733,8 @@ const PLACES = [
     "time": "1–1.5 hrs",
     "desc": "Victorian gardens and glasshouses",
     "combine": "Kibble Palace",
-    "bike": 22
+    "bike": 22,
+    "address": "730 Great Western Rd, Glasgow G12 0UE, UK"
   },
   {
     "place": "Kibble Palace",
@@ -677,7 +744,8 @@ const PLACES = [
     "time": "30–45 min",
     "desc": "Victorian crystal greenhouse",
     "combine": "Botanic Gardens",
-    "bike": 21
+    "bike": 21,
+    "address": "Botanic Gardens, Glasgow G12 0UE, UK"
   },
   {
     "place": "Kelvingrove Park",
@@ -687,7 +755,8 @@ const PLACES = [
     "time": "45–60 min",
     "desc": "Classic park by River Kelvin",
     "combine": "Kelvingrove Museum",
-    "bike": 17
+    "bike": 17,
+    "address": "Park Terrace, Glasgow G3 6BY, UK"
   },
   {
     "place": "Ashton Lane",
@@ -697,7 +766,8 @@ const PLACES = [
     "time": "20–40 min",
     "desc": "Cobblestone street with cafés and bars",
     "combine": "University",
-    "bike": 18
+    "bike": 18,
+    "address": "Ashton Ln, Glasgow, UK"
   },
   {
     "place": "Victoria Park",
@@ -707,7 +777,8 @@ const PLACES = [
     "time": "1 hr",
     "desc": "Quiet park with lake",
     "combine": "Fossil Grove",
-    "bike": 20
+    "bike": 20,
+    "address": "Glasgow G14 9NW, UK"
   },
   {
     "place": "Òran Mór",
@@ -717,7 +788,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Former church turned cultural venue with concerts, ceilidhs and performances.",
     "combine": "Botanic Gardens + Ashton Lane",
-    "bike": 21
+    "bike": 21,
+    "address": "Byres Rd, Glasgow G12 8QX, UK"
   },
   {
     "place": "The Machair Bar",
@@ -727,7 +799,8 @@ const PLACES = [
     "time": "2–3 hrs",
     "desc": "Relaxed pub featuring regular traditional Scottish music sessions.",
     "combine": "University + Ashton Lane",
-    "bike": 21
+    "bike": 21,
+    "address": "372-374 Great Western Rd, Glasgow G4 9HT, UK"
   },
   {
     "place": "University of Glasgow Concerts",
@@ -737,6 +810,7 @@ const PLACES = [
     "time": "1–2 hrs",
     "desc": "Student and guest performances throughout the academic year.",
     "combine": "Cloisters + Hunterian Museum",
-    "bike": 17
+    "bike": 17,
+    "address": "Glasgow G12 8QQ, UK"
   }
 ];
