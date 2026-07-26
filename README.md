@@ -29,6 +29,10 @@ sin el 0 inicial). Por ejemplo:
 
 Sin este cambio, los botones de WhatsApp abrirán un chat a un número de prueba que no es el tuyo.
 
+El botón "Want to suggest something to Cristina?" usa el mismo número — abre WhatsApp con un
+mensaje que empieza "Hi Cristina! I have a recommendation for you: " listo para que la persona
+solo escriba su sugerencia y le dé enviar.
+
 ## Publicarla en GitHub Pages
 
 1. Crea un repositorio nuevo en GitHub (puede ser público o privado, pero Pages gratis requiere público a menos que tengas GitHub Pro/Team).
